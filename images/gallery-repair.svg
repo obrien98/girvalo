@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420">
+  <rect width="600" height="420" rx="28" fill="#eef5f0"/>
+  <rect x="58" y="246" width="484" height="104" rx="18" fill="#c88251"/>
+  <rect x="84" y="102" width="60" height="116" rx="18" fill="#355a47"/>
+  <path d="M114 91v32" stroke="#355a47" stroke-width="20"/>
+  <circle cx="228" cy="183" r="51" fill="#bb6c3d"/>
+  <circle cx="228" cy="183" r="20" fill="#f6f0e5"/>
+  <rect x="330" y="119" width="165" height="30" rx="15" fill="#7f9b7f"/>
+  <rect x="372" y="142" width="80" height="72" rx="20" fill="#d8e5d9"/>
+  <path d="M318 228h182" stroke="#355a47" stroke-linecap="round" stroke-width="11"/>
+  <text x="68" y="72" fill="#244736" font-family="Palatino Linotype, serif" font-size="28">Repair Day Essentials</text>
+</svg>

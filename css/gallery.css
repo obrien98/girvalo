@@ -1,0 +1,42 @@
+/* Gallery grid */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  
+  .gallery-grid img {
+    width: 100%;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+  
+  /* Lightbox */
+  #lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.9);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+  }
+  
+  #lightbox.active {
+    display: flex;
+  }
+  
+  #lightbox-img {
+    max-width: 90%;
+    max-height: 85%;
+    border-radius: 12px;
+  }
+  
+  #close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 3rem;
+    color: white;
+    cursor: pointer;
+  }

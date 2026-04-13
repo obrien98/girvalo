@@ -1,0 +1,351 @@
+:root {
+  --ink: #163127;
+  --forest: #244736;
+  --sage: #a7c4ab;
+  --moss: #6e8f75;
+  --cream: #f6f0e5;
+  --sand: #e5d7c0;
+  --copper: #bb6c3d;
+  --shadow: rgba(26, 46, 37, 0.14);
+  --radius: 24px;
+  --radius-sm: 16px;
+  --max: 1180px; 
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Avenir Next", "Trebuchet MS", sans-serif;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at top left, rgba(187, 108, 61, 0.18), transparent 34%),
+    linear-gradient(180deg, #fbf7f0 0%, #f5ede0 100%);
+}
+
+main{
+  /* width: min(calc(100% - 2rem), var(--max)); take the smaller of thest wo values 
+  margin: 0 auto; */
+
+  padding: 0 2rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+
+
+
+.hero,
+.page-space {
+  padding: 3.5rem 0 4rem;
+}
+
+.hero-grid,
+.split-section,
+.banner,
+.contact-layout,
+.hotspot-layout {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.hero-grid,
+.split-section {
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+}
+
+.eyebrow {
+  margin: 0 0 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--copper);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2.4rem, 5vw, 4.6rem);
+  line-height: 0.98;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: clamp(1.5rem, 2vw, 2.1rem);
+}
+
+.lead {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  max-width: 60ch;
+}
+
+.button,
+.button-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 3rem;
+  padding: 0.9rem 1.3rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.button {
+  color: white;
+  background: linear-gradient(135deg, var(--forest), #315b47);
+  box-shadow: 0 18px 30px rgba(36, 71, 54, 0.2);
+}
+
+.button-ghost {
+  border: 1px solid rgba(36, 71, 54, 0.18);
+  background: rgba(255, 255, 255, 0.55);
+}
+
+.cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.7rem;
+}
+
+.card,
+.info-card,
+.service-card,
+.gallery-card,
+.detail-card {
+  border: 1px solid rgba(36, 71, 54, 0.1);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: 0 18px 45px var(--shadow);
+}
+
+.hero-art,
+.accent-card,
+.thank-you-card,
+.estimate-form,
+.hotspot-card {
+  padding: 1.2rem;
+}
+
+.feature-strip,
+.service-grid,
+.gallery-grid,
+.detail-grid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.feature-strip {
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: -1rem;
+}
+
+.info-card,
+.service-card,
+.gallery-card,
+.detail-card {
+  padding: 1.25rem;
+}
+
+.text-link {
+  font-weight: 700;
+  color: var(--forest);
+}
+
+.checklist ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  line-height: 1.9;
+}
+
+.banner {
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  padding: 1.6rem;
+  margin: 2rem 0 0;
+  border-radius: var(--radius);
+  background: linear-gradient(135deg, rgba(36, 71, 54, 0.94), rgba(53, 100, 80, 0.92));
+  color: white;
+}
+
+.banner h2,
+.banner .eyebrow {
+  color: inherit;
+}
+
+.banner.compact {
+  margin-top: 2.5rem;
+}
+
+.page-intro {
+  margin-bottom: 2rem;
+}
+
+.service-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.service-card img,
+.gallery-card img {
+  width: 100%;
+  border-radius: var(--radius-sm);
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.photo-frame img,
+.hotspot-card img,
+.photo-banner img,
+.thank-you-photo {
+  width: 100%;
+  border-radius: var(--radius-sm);
+  object-fit: cover;
+}
+
+.photo-frame img {
+  aspect-ratio: 4 / 5;
+}
+
+.table-shell {
+  overflow-x: auto;
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: 0 18px 45px var(--shadow);
+  padding: 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 760px;
+}
+
+caption {
+  text-align: left;
+  font-size: 1.6rem;
+  padding: 0.5rem 0 1rem;
+}
+
+th,
+td {
+  padding: 1rem;
+  border: 1px solid rgba(36, 71, 54, 0.14);
+  vertical-align: top;
+  text-align: left;
+}
+
+th {
+  background: rgba(167, 196, 171, 0.18);
+}
+
+.gallery-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.gallery-card figcaption {
+  line-height: 1.6;
+}
+
+.photo-banner {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 1.25rem;
+  padding: 1.2rem;
+  align-items: center;
+  margin-bottom: 1.6rem;
+}
+
+.photo-banner img,
+.thank-you-photo {
+  aspect-ratio: 4 / 3;
+}
+
+.hotspot-layout,
+.contact-layout {
+  grid-template-columns: 1.2fr 0.8fr;
+  align-items: start;
+}
+
+.detail-grid {
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 1.5rem;
+}
+
+.estimate-form {
+  display: grid;
+  gap: 1rem;
+}
+
+.form-row {
+  display: grid;
+  gap: 0.45rem;
+}
+
+label {
+  font-weight: 700;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 0.95rem 1rem;
+  border: 1px solid rgba(36, 71, 54, 0.18);
+  border-radius: 1rem;
+  font: inherit;
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.thank-you-card {
+  max-width: 48rem;
+}
+
+.site-footer {
+  padding: 2rem 0 2.7rem;
+  background: #f0e6d5;
+  border-top: 1px solid rgba(36, 71, 54, 0.1);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+
+
+
+@media (max-width: 920px) {
+  .hero-grid,
+  .split-section,
+  .service-grid,
+  .gallery-grid,
+  .feature-strip,
+  .photo-banner,
+  .hotspot-layout,
+  .contact-layout,
+  .detail-grid,
+  .footer-grid,
+  .banner {
+    grid-template-columns: 1fr;
+  }
+
+
+}

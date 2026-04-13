@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420">
+  <rect width="600" height="420" rx="28" fill="#fff7ef"/>
+  <rect x="64" y="94" width="472" height="248" rx="22" fill="#f6f0e5"/>
+  <rect x="100" y="128" width="210" height="180" rx="18" fill="#edf4ef"/>
+  <rect x="346" y="127" width="148" height="182" rx="18" fill="#d8e5d9"/>
+  <path d="M356 280c44-6 86-29 104-67" fill="none" stroke="#bb6c3d" stroke-linecap="round" stroke-width="18"/>
+  <rect x="434" y="181" width="40" height="24" rx="10" fill="#355a47"/>
+  <rect x="145" y="334" width="310" height="18" rx="9" fill="#8ca888"/>
+  <text x="71" y="72" fill="#244736" font-family="Palatino Linotype, serif" font-size="28">Paint and Trim Touch-Ups</text>
+</svg>

@@ -1,0 +1,98 @@
+
+
+header{
+    padding: 0 1rem;
+
+}
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    backdrop-filter: blur(16px); /* blurs elements behind it for frosted glass effect */
+    background: rgba(246, 240, 229, 0.9);
+    border-bottom: 1px solid rgba(36, 71, 54, 0.12);
+
+  }
+  
+  .nav-shell {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+  }
+  
+  .brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.85rem;
+    text-decoration: none;
+  }
+  
+  .brand strong,
+  .site-nav a,
+  h1,
+  h2,
+  caption {
+    font-family: "Palatino Linotype", "Book Antiqua", serif;
+  }
+  
+  .brand small {
+    display: block;
+    color: rgba(22, 49, 39, 0.72);
+  }
+  
+  
+  .site-nav {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .site-nav a,
+  .menu-toggle {
+    border: 0;
+    border-radius: 999px;
+    padding: 0.8rem 1rem;
+    text-decoration: none;
+    background: transparent;
+    color: var(--ink);
+    cursor: pointer;
+  }
+  
+  .site-nav a:hover,
+  .site-nav a.active,
+  .menu-toggle:hover {
+    background: rgba(36, 71, 54, 0.08);
+  }
+  
+  .menu-toggle {
+    display: none;
+  }
+
+  @media (max-width: 1020px){
+    .menu-toggle {
+      display: inline-flex;
+    }
+  
+    .site-nav {
+      display: none;
+      position: absolute;
+      top: calc(100% + 0rem);
+      left: 0rem;
+      right: 0rem;
+      padding: 0.7rem;
+      border-radius: 1.2rem;
+      background: rgba(246, 240, 229, 0.98);
+      box-shadow: 0 18px 45px var(--shadow);
+    }
+  
+    .site-nav.open {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .nav-shell {
+      position: relative;
+      flex-wrap: wrap;
+    }
+    
+  }

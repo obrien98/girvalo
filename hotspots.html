@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Service Highlights | Girvalo's Home Service</title>
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script defer src="js/site.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="nav-shell">
+        <a class="brand" href="index.html">
+          <span>
+            <strong>Girvalo's Home Service</strong>
+            <small>Practical help. Cleaner spaces. Better weekends.</small>
+          </span>
+        </a>
+
+        <!-- Hamburger Button -->
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Toggle navigation"
+        >
+          ☰
+        </button>
+
+        <!-- Navigation -->
+        <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+          <a class="active" href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="plans.html">Service Plans</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="hotspots.html">Service Highlights</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="">
+      <section class="page-intro">
+        <p class="eyebrow">Interactive example</p>
+        <h1>Explore a real before-and-after result.</h1>
+        <p class="lead">
+          Click different areas of the image below to jump to details about the
+          condition before the work and the results after service.
+        </p>
+      </section>
+
+      <section class="hotspot-layout">
+        <div class="card hotspot-card">
+          <img
+            src="images/house_washing.webp"
+            alt="Before and after house washing image with clickable areas"
+            usemap="#service-map"
+          />
+          <map name="service-map">
+            <area
+              shape="rect"
+              coords="20,20,370,1540"
+              href="#before"
+              alt="View before condition"
+            />
+            <area
+              shape="rect"
+              coords="395,20,1560,1540"
+              href="#after"
+              alt="View after results"
+            />
+          </map>
+        </div>
+
+        <aside class="info-card">
+          <h2>Try it out</h2>
+          <p>
+            Click the left side of the image to see the condition before the
+            work, and the right side to see the finished result.
+          </p>
+          <p>
+            This interactive view helps show the value of the service in a
+            simple, visual way.
+          </p>
+        </aside>
+      </section>
+
+      <section class="detail-grid">
+        <article id="before" class="detail-card">
+          <h2>Before Service</h2>
+          <p>
+            The exterior shows visible buildup, discoloration, and general wear
+            from weather and time. This is a common issue for many homeowners.
+          </p>
+        </article>
+
+        <article id="after" class="detail-card">
+          <h2>After Service</h2>
+          <p>
+            After cleaning, the siding is brighter, more even in color, and
+            looks well-maintained. The difference is immediate and noticeable.
+          </p>
+        </article>
+
+        <article class="detail-card">
+          <h2>Why it matters</h2>
+          <p>
+            Regular exterior cleaning not only improves appearance but also
+            helps protect surfaces and extend the life of your home’s materials.
+          </p>
+        </article>
+
+        <article class="detail-card">
+          <h2>When to schedule</h2>
+          <p>
+            Most homeowners benefit from seasonal cleanings, especially after
+            winter buildup or before summer when outdoor spaces are used more
+            often.
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div>
+          <strong>Girvalo's Home Service</strong>
+          <p>
+            Built for homeowners who want dependable help and a cleaner, calmer
+            home.
+          </p>
+        </div>
+
+        <div>
+          <p><a href="contact.html">Request an estimate</a></p>
+        </div>
+
+        <div>
+          <p><strong>Contact</strong></p>
+          <p>Email: girvalohomeservice@gmail.com</p>
+          <p>Serving Westchester County and surrounding areas</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

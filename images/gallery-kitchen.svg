@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420">
+  <rect width="600" height="420" rx="28" fill="#f6f0e5"/>
+  <rect x="55" y="96" width="490" height="240" rx="20" fill="#fff9f1"/>
+  <rect x="76" y="118" width="212" height="102" rx="14" fill="#d4e2d4"/>
+  <rect x="311" y="118" width="212" height="102" rx="14" fill="#d9c5ae"/>
+  <rect x="76" y="236" width="447" height="76" rx="16" fill="#c97a49"/>
+  <circle cx="126" cy="273" r="8" fill="#f6f0e5"/>
+  <circle cx="488" cy="273" r="8" fill="#f6f0e5"/>
+  <rect x="338" y="141" width="158" height="58" rx="10" fill="#edf4ef"/>
+  <path d="M102 335h395" stroke="#8aa286" stroke-linecap="round" stroke-width="12"/>
+  <text x="74" y="75" fill="#244736" font-family="Palatino Linotype, serif" font-size="28">Kitchen Refresh</text>
+</svg>

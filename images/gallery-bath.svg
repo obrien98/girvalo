@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420">
+  <rect width="600" height="420" rx="28" fill="#eef5f0"/>
+  <rect x="66" y="92" width="468" height="250" rx="22" fill="#fff"/>
+  <rect x="104" y="126" width="124" height="124" rx="18" fill="#d7e7dc"/>
+  <rect x="260" y="126" width="234" height="32" rx="10" fill="#bb6c3d"/>
+  <rect x="260" y="171" width="188" height="112" rx="18" fill="#f6f0e5"/>
+  <rect x="127" y="267" width="76" height="48" rx="20" fill="#d9c5ae"/>
+  <circle cx="165" cy="291" r="14" fill="#fff8ef"/>
+  <path d="M296 284c0-42 34-76 76-76s76 34 76 76" fill="none" stroke="#355a47" stroke-width="10"/>
+  <text x="74" y="72" fill="#244736" font-family="Palatino Linotype, serif" font-size="28">Bathroom Detail Work</text>
+</svg>

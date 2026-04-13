@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Girvalo's Home Service</title>
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script defer src="js/site.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="nav-shell">
+        <a class="brand" href="index.html">
+          <span>
+            <strong>Girvalo's Home Service</strong>
+            <small>Practical help. Cleaner spaces. Better weekends.</small>
+          </span>
+        </a>
+
+        <!-- Hamburger Button -->
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Toggle navigation"
+        >
+          ☰
+        </button>
+
+        <!-- Navigation -->
+        <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+          <a class="active" href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="plans.html">Service Plans</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="hotspots.html">Service Highlights</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="">
+      <section class="page-intro">
+        <p class="eyebrow">Get started</p>
+        <h1>Request a home service estimate.</h1>
+        <p class="lead">
+          Tell us a bit about your home and the work you need done. You’ll hear
+          back quickly to discuss details, pricing, and scheduling.
+        </p>
+      </section>
+
+      <section class="photo-banner card">
+        <img src="images/girvalo.webp" alt="Owner of Girvalo's Home Service" />
+        <div>
+          <h2>Talk directly with the business owner</h2>
+          <p>
+            When you reach out, you’re connecting with the person who will
+            actually be doing the work. No call centers, no confusion—just clear
+            communication from start to finish.
+          </p>
+        </div>
+      </section>
+
+      <section class="contact-layout">
+        <form class="estimate-form card" action="thank-you.html" method="get">
+          <div class="form-row">
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" required />
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email address</label>
+            <input id="email" name="email" type="email" required />
+          </div>
+
+          <div class="form-row">
+            <label for="phone">Phone number</label>
+            <input id="phone" name="phone" type="tel" />
+          </div>
+
+          <div class="form-row">
+            <label for="service">Primary service needed</label>
+            <select id="service" name="service">
+              <option>Exterior cleanup</option>
+              <option>Pressure washing</option>
+              <option>Painting touch-ups</option>
+              <option>Small repairs</option>
+              <option>Seasonal maintenance</option>
+              <option>Custom project</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="timeline">Preferred timeline</label>
+            <input
+              id="timeline"
+              name="timeline"
+              type="text"
+              placeholder="This week, this month, flexible..."
+            />
+          </div>
+
+          <div class="form-row">
+            <label for="details">Project details</label>
+            <textarea
+              id="details"
+              name="details"
+              rows="6"
+              placeholder="Tell us what needs attention at your home."
+            ></textarea>
+          </div>
+
+          <button class="button" type="submit">Send Estimate Request</button>
+        </form>
+
+        <aside class="info-card contact-side">
+          <h2>What happens next</h2>
+          <p>
+            After submitting the form, you’ll receive a follow-up to go over
+            your project, timeline, and the best approach for your home.
+          </p>
+          <p>
+            Our goal is simple: clear communication, reliable work, and results
+            you can see right away.
+          </p>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div>
+          <strong>Girvalo's Home Service</strong>
+          <p>
+            Built for homeowners who want dependable help and a cleaner, calmer
+            home.
+          </p>
+        </div>
+
+        <div>
+          <p><a href="contact.html">Request an estimate</a></p>
+        </div>
+
+        <div>
+          <p><strong>Contact</strong></p>
+          <p>Email: girvalohomeservice@gmail.com</p>
+          <p>Serving Westchester County and surrounding areas</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

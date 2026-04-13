@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420">
+  <rect width="600" height="420" rx="28" fill="#f4eedf"/>
+  <rect y="250" width="600" height="170" fill="#b7cda5"/>
+  <path d="M72 264c112-78 343-80 456 0" fill="none" stroke="#8aa286" stroke-width="14"/>
+  <rect x="88" y="160" width="132" height="104" rx="12" fill="#fbf8f0" stroke="#355a47" stroke-width="6"/>
+  <path d="M72 170 154 112l83 58" fill="none" stroke="#914d2f" stroke-linecap="round" stroke-width="14"/>
+  <rect x="353" y="198" width="42" height="96" rx="10" fill="#bb6c3d"/>
+  <path d="M374 130v73" stroke="#355a47" stroke-width="12"/>
+  <path d="M339 160h70" stroke="#355a47" stroke-width="12"/>
+  <circle cx="503" cy="218" r="48" fill="#789875"/>
+  <circle cx="452" cy="247" r="34" fill="#92ac84"/>
+  <text x="70" y="84" fill="#244736" font-family="Palatino Linotype, serif" font-size="28">Yard Cleanup</text>
+</svg>
