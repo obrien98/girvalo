@@ -171,9 +171,7 @@ th {
   grid-template-columns: repeat(3, 1fr);
 }
 
-.gallery-card figcaption {
-  line-height: 1.6;
-}
+
 
 .photo-banner {
   display: grid;

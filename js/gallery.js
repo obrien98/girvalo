@@ -9,6 +9,7 @@ let currentIndex = 0;
 
 // hve to take all gallery links and turn them into array of image urls
 // because calling map on a nodelist throws an error  
+// now i have image index in simple array 
 const images = Array.from(triggers).map(link => link.getAttribute("href")); // gives us ["img1.jpg", "img2.jpg", etc]
 
 // open
@@ -38,7 +39,7 @@ function nextImage() {
 
 // back
 function prevImage() {
-  currentIndex = (currentIndex - 1 + images.length) % images.length;
+  currentIndex = (currentIndex - 1 + images.length) % images.length; // 5 images -> on image 4 hit back ->  (3+5) % 5 = 3
   showImage();
 }
 
