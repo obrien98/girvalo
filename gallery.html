@@ -10,8 +10,18 @@
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/gallery.css" />
 
-    <script defer src="js/site.js"></script>
+    <script defer src="js/nav.js"></script>
     <script defer src="js/gallery.js"></script>
+
+    <style>
+      @media (min-width: 1120px) {
+        footer{
+          position: fixed;
+          bottom: 0;
+          
+        }
+      }
+    </style>
 
   </head>
   <body>
@@ -37,17 +47,17 @@
 
         <!-- Navigation -->
         <nav id="site-nav" class="site-nav" aria-label="Main navigation">
-          <a class="active" href="index.html">Home</a>
+          <a href="index.html">Home</a>
           <a href="services.html">Services</a>
           <a href="plans.html">Service Plans</a>
-          <a href="gallery.html">Gallery</a>
+          <a class="active" href="gallery.html">Gallery</a>
           <a href="hotspots.html">Service Highlights</a>
           <a href="contact.html">Contact</a>
         </nav>
       </div>
     </header>
 
-    <main class="wrap page-space">
+    <main class="">
       <section class="page-intro">
         <p class="eyebrow">Recent work</p>
         <h1>See the difference for yourself.</h1>
@@ -59,42 +69,44 @@
       </section>
 
       <section class="gallery-grid">
-        <figure>
-          <a href="images/gutter.webp" class="lightbox-trigger">
-            <img src="images/gutter.webp" alt="Gutter cleaning" />
-          </a>
-        </figure>
 
-        <figure>
-          <a href="images/house_washing.webp" class="lightbox-trigger">
-            <img src="images/house_washing.webp" alt="House washing" />
-          </a>
-        </figure>
 
-        <figure>
-          <a href="images/roof.webp" class="lightbox-trigger">
-            <img src="images/roof.webp" alt="Roof cleanup" />
-          </a>
-        </figure>
+        <a href="images/powerwash.webp" class="lightbox-trigger">
+          <img src="images/powerwash.webp" alt="Powerwashing" />
+        </a>
 
-        <figure>
-          <a href="images/solar.webp" class="lightbox-trigger">
-            <img src="images/solar.webp" alt="Solar cleaning" />
-          </a>
-        </figure>
+        <a href="images/fence.webp" class="lightbox-trigger">
+          <img src="images/fence.webp" alt="Powerwashing" />
+        </a>
 
-        <figure>
-          <a href="images/girvalo.webp" class="lightbox-trigger">
-            <img src="images/girvalo.webp" alt="Owner" />
-          </a>
-        </figure>
+        <a href="images/gutter.webp" class="lightbox-trigger">
+          <img src="images/gutter.webp" alt="Gutter cleaning" />
+        </a>
+  
+        <a href="images/house_washing.webp" class="lightbox-trigger">
+          <img src="images/house_washing.webp" alt="House washing" />
+        </a>
+  
+        <a href="images/roof.webp" class="lightbox-trigger">
+          <img src="images/roof.webp" alt="Roof cleanup" />
+        </a>
+  
+        <a href="images/solar.webp" class="lightbox-trigger">
+          <img src="images/solar.webp" alt="Solar cleaning" />
+        </a>
+  
       </section>
     </main>
-
+  
     <!-- LIGHTBOX -->
     <div id="lightbox">
       <span id="close">&times;</span>
+  
+      <span class="arrow left">&#10094;</span>
+  
       <img id="lightbox-img" src="" alt="" />
+  
+      <span class="arrow right">&#10095;</span>
     </div>
 
     </main>
@@ -120,5 +132,6 @@
         </div>
       </div>
     </footer>
+    
   </body>
 </html>

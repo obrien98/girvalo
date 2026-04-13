@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/nav.css" />
     <link rel="stylesheet" href="css/styles.css" />
-    <script defer src="js/site.js"></script>
+
+    <script defer src="js/nav.js"></script>
   </head>
   <body>
     <header class="site-header">
@@ -33,11 +34,11 @@
 
         <!-- Navigation -->
         <nav id="site-nav" class="site-nav" aria-label="Main navigation">
-          <a class="active" href="index.html">Home</a>
+          <a href="index.html">Home</a>
           <a href="services.html">Services</a>
           <a href="plans.html">Service Plans</a>
           <a href="gallery.html">Gallery</a>
-          <a href="hotspots.html">Service Highlights</a>
+          <a class="active" href="hotspots.html">Service Highlights</a>
           <a href="contact.html">Contact</a>
         </nav>
       </div>
@@ -45,7 +46,6 @@
 
     <main class="">
       <section class="page-intro">
-        <p class="eyebrow">Interactive example</p>
         <h1>Explore a real before-and-after result.</h1>
         <p class="lead">
           Click different areas of the image below to jump to details about the
@@ -63,13 +63,13 @@
           <map name="service-map">
             <area
               shape="rect"
-              coords="20,20,370,1540"
+              coords="0,0,472,945"
               href="#before"
               alt="View before condition"
             />
             <area
               shape="rect"
-              coords="395,20,1560,1540"
+              coords="472,0,945,945"
               href="#after"
               alt="View after results"
             />
@@ -146,5 +146,20 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      document.querySelectorAll("area").forEach((area) => {
+        area.addEventListener("click", () => {
+          const target = document.querySelector(area.getAttribute("href"));
+          if (!target) return; // if for some reason it doesn't exist -> stop
+
+          target.classList.add("highlight");
+
+          setTimeout(() => {
+            target.classList.remove("highlight");
+          }, 1000);
+        });
+      });
+    </script>
   </body>
 </html>

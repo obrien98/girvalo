@@ -8,7 +8,17 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/nav.css" />
     <link rel="stylesheet" href="css/styles.css" />
+
+    <script defer src="js/nav.js"></script>
     <script defer src="js/site.js"></script>
+
+    <style>
+      main {
+        min-height: calc(
+          100vh - 300px
+        ); /* attempting to guess size of footer */
+      }
+    </style>
   </head>
   <body>
     <header class="site-header">
@@ -33,7 +43,7 @@
 
         <!-- Navigation -->
         <nav id="site-nav" class="site-nav" aria-label="Main navigation">
-          <a class="active" href="index.html">Home</a>
+          <a href="index.html">Home</a>
           <a href="services.html">Services</a>
           <a href="plans.html">Service Plans</a>
           <a href="gallery.html">Gallery</a>
@@ -45,19 +55,10 @@
 
     <main class="">
       <section class="card thank-you-card">
-        <img
-          class="thank-you-photo"
-          src="images/solar.webp"
-          alt="Clean solar panels after service"
-        />
-
         <p class="eyebrow">Request received</p>
         <h1>Thanks for reaching out.</h1>
 
-        <p class="lead">
-          Your request has been sent successfully. You’ll be contacted soon to
-          go over the details, pricing, and next steps for your project.
-        </p>
+        <p class="lead">We'll be in touch soon!</p>
 
         <a class="button" href="index.html">Back to Homepage</a>
       </section>

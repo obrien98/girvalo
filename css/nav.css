@@ -2,14 +2,17 @@
 
 header{
     padding: 0 1rem;
+    background-color: var(--sand);
+
+    
 
 }
 .site-header {
     position: sticky;
     top: 0;
     z-index: 10;
-    backdrop-filter: blur(16px); /* blurs elements behind it for frosted glass effect */
-    background: rgba(246, 240, 229, 0.9);
+    background-color: var(--sand);
+
     border-bottom: 1px solid rgba(36, 71, 54, 0.12);
 
   }
@@ -68,7 +71,7 @@ header{
     display: none;
   }
 
-  @media (max-width: 1020px){
+  @media (max-width: 1020px){ /* smaller screens */
     .menu-toggle {
       display: inline-flex;
     }

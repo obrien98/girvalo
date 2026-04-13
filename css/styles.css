@@ -33,7 +33,7 @@
 .gallery-card,
 .detail-card {
   border-radius: var(--radius);
-  background: rgba(255, 255, 255);
+  background: white;
   box-shadow: 0 18px 45px var(--shadow);
 }
 
@@ -111,8 +111,18 @@
   object-fit: cover;
 }
 
+
+/* fixes hot spot issue */
+.hotspot-card {
+  overflow-x: auto;
+}
+/* fixes hot spot issue */
+.hotspot-card img {
+  width: 1600px;
+  display: block;
+}
+
 .photo-frame img,
-.hotspot-card img,
 .photo-banner img,
 .thank-you-photo {
   width: 100%;
@@ -127,7 +137,7 @@
 .table-shell {
   overflow-x: auto;
   border-radius: var(--radius);
-  background: rgba(255, 255, 255, 0.72);
+  background-color: var(--cream);
   box-shadow: 0 18px 45px var(--shadow);
   padding: 1rem;
 }
@@ -147,13 +157,14 @@ caption {
 th,
 td {
   padding: 1rem;
-  border: 1px solid rgba(36, 71, 54, 0.14);
+  /* show only 14% of this green color */
+  border: 1px solid rgba(36, 71, 54, 0.14); /* built from --forest, has to be a better way to do this*/ 
   vertical-align: top;
   text-align: left;
 }
 
 th {
-  background: rgba(167, 196, 171, 0.18);
+  background: rgba(167, 196, 171, 0.18); /* built from --sage -> same as above */
 }
 
 .gallery-grid {
@@ -173,10 +184,7 @@ th {
   margin-bottom: 1.6rem;
 }
 
-.photo-banner img,
-.thank-you-photo {
-  aspect-ratio: 4 / 3;
-}
+
 
 .hotspot-layout,
 .contact-layout {
@@ -216,13 +224,20 @@ textarea {
 
 .thank-you-card {
   max-width: 48rem;
+  margin: auto;
 }
 
 
 
+/*  highlight for hotspot page  */
+.highlight {
+  scroll-margin-top: 100px;
+  outline: 3px solid rgba(36, 71, 54, 0.4);
+  background-color: var(--cream);
+  transition: outline 0.5s ease;
+}
 
-
-@media (max-width: 920px) {
+@media (max-width: 920px) { /* if screen gets small, collapse to 1 column */
   .hero-grid,
   .split-section,
   .service-grid,
