@@ -74,6 +74,7 @@ header{
   @media (max-width: 1020px){ /* smaller screens */
     .menu-toggle {
       display: inline-flex;
+      font-size: 2rem;
     }
   
     .site-nav {
