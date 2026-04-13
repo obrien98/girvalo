@@ -24,7 +24,7 @@ document.addEventListener("click", (e) => {
 
 // toggle menu on hamburger click 
 toggle.addEventListener("click", () => {
-const isOpen = nav.classList.toggle("open");
+const isOpen = nav.classList.toggle("open"); // returns t/f
 toggle.setAttribute("aria-expanded", String(isOpen)); // sets aria-expanded="true" or aria-expanded="false"
   });
 

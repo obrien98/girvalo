@@ -7,11 +7,12 @@ const rightArrow = document.querySelector(".arrow.right");
 
 let currentIndex = 0;
 
-// take all gallery links and turn them into array of image urls 
-const images = Array.from(triggers).map(link => link.getAttribute("href"));
+// hve to take all gallery links and turn them into array of image urls
+// because calling map on a nodelist throws an error  
+const images = Array.from(triggers).map(link => link.getAttribute("href")); // gives us ["img1.jpg", "img2.jpg", etc]
 
 // open
-triggers.forEach((link, index) => {
+triggers.forEach((link, index) => { // for each on a node list gives us (element, index)
   link.addEventListener("click", (e) => {
     e.preventDefault(); // overrride default browser behavior 
     currentIndex = index;
@@ -22,6 +23,7 @@ triggers.forEach((link, index) => {
 
 // show image
 function showImage() {
+  // lightboxImg.src = triggers[currentIndex].getAttribute("href"); old way 
   lightboxImg.src = images[currentIndex]; // just change source to whatever image is up
 }
 
