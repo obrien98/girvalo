@@ -19,23 +19,26 @@
 /* Lightbox */
 #lightbox {
   position: fixed;
-  inset: 0;
+  top: 0; /* lightbox covers entire screen */
+  left:0;
+  right:0;
+  bottom:0; 
   background: rgba(0, 0, 0, 0.9);
 
-  display: none;
-  align-items: center;
+  display: none; /* hidden full screen container */
+  align-items: center; 
   justify-content: center;
 
   z-index: 999;
 }
 
 #lightbox.active {
-  display: flex;
+  display: flex; /* becomes visible */
 }
 
 /* Image */
 #lightbox-img {
-  max-width: 90%;
+  max-width: 90%; /* keeps images responsive*/
   max-height: 85%;
   border-radius: 12px;
 }
